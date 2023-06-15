@@ -1,0 +1,445 @@
+body,html {
+font-family:"Trebuchet MS", Georgia, Verdana, serif;
+color:#000;
+background:#4e71b9;
+background-image:url(images/body_gradient.gif);
+background-repeat:repeat-x;
+margin:0;
+padding:0;
+}
+
+body {
+min-width:786px;
+}
+
+/* position:absolute for all browsers - the whole page scrolls */
+div#headerwrap {
+position:absolute;
+width:100%;
+top:0;
+left:0;
+height:138px;
+background:#4e71b9;
+background-image:url(images/body_gradient.gif);
+background-repeat:repeat-x;
+z-index:10;
+}
+
+/* position:fixed for modern browsers - header do not scroll */
+body>div#headerwrap {
+position:fixed;
+}
+
+div#header {
+height:138px;
+width:786px;
+color:#eee;
+margin:0 auto;
+}
+
+/* set a left margin to compensate for IE/Win always making room for a scrollbar */
+div#middlewrap {
+voice-family:inherit;
+margin-left:16px;
+padding:138px 0 10px;
+}
+
+/* set left margin for modern browsers */
+body>div#middlewrap {
+margin-left:0;
+}
+
+div#middle {
+width:786px;
+margin:0 auto;
+}
+
+div#sidebar {
+width:180px;
+float:left;
+}
+
+div#content {
+margin-left:180px;
+background:#fff;
+padding:0 10px;
+}
+
+hr {
+color:#eee;
+}
+
+div#middle,div#sidebar {
+background:#eee;
+}
+
+h1,h2 {
+margin:0;
+padding:0;
+}
+
+div#sidebar h2 {
+padding-left:5px;
+}
+
+h1 {
+font-size:1.4em;
+text-align:center;
+}
+
+div#header h1 {
+padding-top:15px;
+height:94px;
+}
+
+h2 {
+font-size:1.2em;
+padding-top:1em;
+margin-top:0;
+color: #0000ee;
+}
+
+p {
+margin-bottom:0;
+font-size:1em;
+line-height:1.4em;
+}
+
+pre {
+font-size:1.1em;
+line-height:1.4em;
+}
+
+ul {
+font-size:1em;
+line-height:1.4em;
+margin-left:20px;
+}
+
+/* Style menu */
+table,img {
+border:0;
+margin:0;
+padding:0;
+}
+
+
+tr.padd {
+vertical-align: top;
+padding-top: 2em;
+}
+
+th.leftblue {
+text-align:left;
+color: #0000ee;
+padding-top: 1em;
+}
+
+td.top {
+text-align:right;
+}
+.toc {
+text-align:right;
+}
+
+/* kill default 50px left padding and set 20px */
+li {
+margin-bottom:.8em;
+}
+
+li.demo {
+padding-top: 135px;
+font-weight: 800;
+}
+.space {
+padding-top: 135px;
+}
+
+/* set default inter-item vertical spacing */
+.menuminwidth0 {
+position:relative;
+border:0;
+width:100%;
+height:69px;
+min-width:560px;
+margin:0;
+padding:0;
+}
+
+* html .menuminwidth1 {
+position:relative;
+float:left;
+height:1px;
+border-left:560px solid #aaa;
+}
+
+* html .menuminwidth2 {
+position:relative;
+margin-left:-560px;
+height:1px;
+}
+
+#mastheadlogo {
+float:left;
+vertical-align:top;
+border:0;
+margin:6px 0 0 7px;
+padding:0;
+}
+
+#focus {
+position:absolute;
+border:0;
+top:15px;
+left:301px;
+width:121px;
+height:13px;
+margin:0;
+padding:0;
+}
+
+/*=========== TOP OF THE MENU CASCADE =============*/
+.menu {
+position:relative;
+float:left;
+border:0;
+height:32px;
+width:100%;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:18px;
+border-bottom:3px solid #000;
+margin:0;
+padding:0;
+}
+
+.menu img {
+vertical-align:top;
+}
+
+.menu ul {
+border:0;
+list-style-type:none;
+line-height:1.5em;
+background-image:url(images/body_gradient.gif);
+background-repeat:repeat-x;
+margin:0;
+padding:0;
+}
+
+.menu li {
+float:left;
+position:relative;
+margin:0;
+}
+
+.menu ul li table {
+/* m\argin:0;*/
+border-collapse:collapse;
+font-size:18px;
+margin:-1px 0;
+}
+
+.drop {
+display:block;
+text-align:right;
+margin:0;
+padding:0 0.33em;
+}
+
+.drop span {
+float:left;
+}
+
+/*===========TOP LEVEL MENU DEFINITIONS ==============*/
+.menu ul li ul {
+display:none;
+line-height:1em;
+padding:1px;
+}
+
+.menu ul li a,.menu ul li a:visited {
+display:block;
+float:left;
+text-decoration:none;
+height:32px;
+color:#fff;
+width:131px;
+background-image:url(images/tab.gif);
+background-repeat: no-repeat;
+font-size:13px;
+text-align: center;
+}
+.menu ul li:hover a,.menu ul li a:hover,#current {
+color:#fff;
+width:131px;
+background-image:url(images/tabcc.gif);
+background-repeat: no-repeat;
+text-transform: none;
+font-weight: 600;
+}
+/*=========== 2ND LEVEL MENU DEFINITIONS ===============*/
+.menu ul li:hover ul,.menu ul li a:hover ul {
+display:block;
+position:absolute;
+top:32px;
+left:-1px;
+height:auto;
+width:130px;
+color:#000;
+background:#000;
+line-height:1em;
+margin:0;
+text-align: left;
+text-transform: none;
+font-weight: normal;
+}
+
+.menu ul li:hover ul.leftbutton,.menu ul li a:hover ul.leftbutton {
+left:0;
+}
+
+.menu ul li:hover ul li a,.menu ul li a:hover ul li a {
+border:0;
+height:auto;
+color:#000;
+background:#d8d8d8;
+width:10.0em;
+margin:0;
+padding:0;
+font-size:13px;
+text-align: left;
+text-transform: none;
+font-weight: normal;
+}
+
+.menu ul li:hover ul li:hover a,.menu ul li a:hover ul li a:hover {
+color:#000;
+background:#FFF;
+}
+
+/*========== 3RD LEVEL MENU DEFINITIONS ==============*/
+.menu ul li:hover ul li ul,.menu ul li a:hover ul li a ul {
+visibility:hidden;
+font-size:12px;
+}
+
+.menu ul li:hover ul li:hover ul,.menu ul li a:hover ul li a:hover ul {
+visibility:visible;
+position:absolute;
+margin-top:-1px;
+top:0;
+left:130px;
+width:190px;
+line-height:1.5em;
+}
+
+.menu ul li:hover ul li:hover ul li a,.menu ul li a:hover ul li a:hover ul li a {
+width:190px;
+background:#d8d8d8;
+}
+
+.menu ul li:hover ul li:hover ul li a:hover,.menu ul li a:hover ul li a:hover ul li a:hover {
+width:190px;
+background:#FFF;
+}
+
+#text {
+height:5.215em;
+}
+
+.menu ul li:hover ul.skinny,.menu ul li a:hover ul.skinny,.menu ul li:hover ul.skinny li a,.menu ul li a:hover ul.skinny li a,.menu ul li:hover ul.skinny li a:hover,.menu ul li a:hover ul.skinny li a:hover {
+width:9.5em;
+}
+
+#currentsub {
+font-weight: 800;
+}
+
+#currentsubsub {
+font-weight: 800;
+}
+
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+	
+img.left{
+	float:left;
+	margin-right: .7em;
+	padding: 0;
+}
+img.right{
+	float:right;
+	margin-left: .7em;
+	padding: 0;
+}
+img.center
+    {
+    text-align:center;
+    display:block;
+    }
+
+a {
+  outline: none;
+}
+
+img.vcenter {
+	vertical-align: middle;
+}
+
+.bold {
+font-weight: 800;
+}
+
+.boldblue {
+font-weight: 800;
+color: #0000ee;
+}
+
+.boldred {
+font-weight: 800;
+color: #ee0000;
+}
+
+blockquote {
+	margin-left: 2em;
+}
+
+ul.main {
+	list-style: disc;
+	margin: 0px 0px 0px 0px;
+}
+
+.note {
+font-size: small;
+font-style: italic;
+}
+.mag {
+font-size: 1.5em;
+font-weight: 700;
+}
+.publish {
+font-size: small;
+}
+.steven {
+font-size: .9em;
+font-weight: 600;
+}
+
+.al {
+font-size: 1.2em;
+font-weight: 700;
+}
+
+.magborder {
+background-color: #eeeeee;
+padding: 12px;
+}
+
+.caption {
+font-size: small;
+color: #0000ee;
+text-align:center;
+}
